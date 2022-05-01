@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.btn-primary{
-    @apply text-Neutral-White font-normal px-8 py-3 rounded-full bg-gradient-to-r from-Primary-LimeGreen to-Primary-BrightCyan
+.btn-primary {
+  @apply text-Neutral-White font-normal px-8 py-3 rounded-full bg-gradient-to-r from-Primary-LimeGreen hover:from-Primary-LimeGreen/60 to-Primary-BrightCyan hover:to-Primary-BrightCyan/60;
+}
+h2 {
+  @apply text-Primary-DarkBlue font-light text-4xl;
+}
+h4 {
+  @apply py-3 text-Primary-DarkBlue text-xl cursor-pointer hover:text-Primary-LimeGreen
+}
+.nev-link {
+  @apply hover:text-Primary-DarkBlue py-[34px] hover:border-b-4 hover:border-b-Primary-LimeGreen;
+}
+svg{
+@apply hover:fill-Primary-LimeGreen
 }
